@@ -2,6 +2,6 @@ outcome:
   name: "Reduce new user signup time"
   owner: "product_team"
   metric: "average_signup_time"
-  target: "under 5 minutes"
+  target: "under 55 minutes"
   status: "in_progress"
   feedback_prompt: "Was it easy and fast to sign up?"
