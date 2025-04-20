@@ -1,0 +1,16 @@
+name: Notify on Outcome Change
+
+on:
+  push:
+    paths:
+      - 'outcomes/**.yaml'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Echo outcome changed
+        run: echo "An outcome was updated: ${{ github.event.head_commit.message }}"
