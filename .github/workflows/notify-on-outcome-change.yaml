@@ -13,4 +13,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Echo outcome changed
-        run: echo "An outcome was updated: ${{ github.event.head_commit.message }}"
+        run: echo "An outcome was updated: $(git log -1 --pretty=%B)"
+           
+        
